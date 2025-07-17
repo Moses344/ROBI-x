@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discover Users – Robi X</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>All Users</h2>
+  <div id="usersList"></div>
+
+  <script type="module" src="js/users.js"></script>
+</body>
+</html>

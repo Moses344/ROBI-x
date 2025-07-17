@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile – Robi X</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2 id="userEmail">User</h2>
+  <p>Followers: <span id="followersCount">0</span></p>
+  <p>Following: <span id="followingCount">0</span></p>
+  <button id="followBtn">Follow</button>
+
+  <h3>Videos</h3>
+  <div id="userVideos"></div>
+
+  <script type="module" src="js/user.js"></script>
+</body>
+</html>

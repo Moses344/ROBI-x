@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile – Robi X</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>My Profile</h2>
+  <div id="userInfo"></div>
+  <h3>My Videos</h3>
+  <div id="myVideos"></div>
+  <button onclick="logout()">Logout</button>
+
+  <script type="module" src="js/profile.js"></script>
+</body>
+</html>
