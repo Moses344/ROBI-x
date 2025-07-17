@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Feed – Robi X</title>
+  <meta charset="UTF-8">
+  <title>Feed - Robi X</title>
 </head>
 <body>
-  <h2>Video Feed</h2>
-  <div id="videoFeed"></div>
-  <script type="module" src="js/feed.js"></script>
+  <h1>Welcome to Robi X Feed</h1>
+  <button id="logoutBtn">Logout</button>
+
+  <script type="module">
+    import { auth } from './firebase.js';
+    import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        window.location.href = 'login.html';
+      }
+    });
+
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      signOut(auth).then(() => {
+        window.location.href = 'login.html';
+      });
+    });
+  </script>
 </body>
 </html>
