@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Robi X</title>
+  <title>Robi X - Feed</title>
+  <script type="module" src="js/feed.js"></script>
 </head>
 <body>
-  <h1>Welcome to Robi X</h1>
-  <a href="login.html">Login</a> |
-  <a href="feed.html">Video Feed</a> |
-  <a href="profile.html">My Profile</a> |
-  <a href="users.html">Explore Users</a>
+  <h2>Video Feed</h2>
+  <div id="videos-container"></div>
+  <h3>Upload a Video</h3>
+  <input type="file" id="video-file"><button onclick="uploadVideo()">Upload</button>
+  <br><a href="profile.html">My Profile</a> | <a href="users.html">Explore Users</a>
 </body>
 </html>
